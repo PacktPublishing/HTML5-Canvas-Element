@@ -1,0 +1,38 @@
+const canvas = document.querySelector('#canvas');
+const ctx = canvas.getContext('2d');
+
+
+ctx.fillStyle = 'red';
+ctx.strokeStyle = "blue";
+ctx.rect(100,100,200,100);
+ctx.fill();
+ctx.stroke();
+
+ctx.strokeRect(200,200,200,100);
+
+ctx.beginPath();
+ctx.moveTo(50,400); //move pen
+ctx.lineTo(50,100); // draws a line 
+ctx.lineTo(500,100); // draws a line 
+ctx.lineTo(500,400); // draws a line 
+ctx.lineTo(80,300); // draws a line 
+//ctx.fill();
+ctx.stroke(); //applies the shape by drawing
+ctx.closePath();
+ctx.fillStyle = "purple";
+ctx.strokeStyle = "purple";
+ctx.beginPath();
+ctx.moveTo(320,50);
+ctx.lineTo(520,250);
+ctx.lineTo(120,250);
+ctx.lineTo(320,50);
+ctx.fill();
+ctx.stroke();
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+const canvas = document.querySelector('#canvas');
+const ctx = canvas.getContext('2d');
+ctx.fillRect(100, 100, 200, 200);
+ctx.fillStyle = 'red';
+ctx.font = '48px Arial';
+ctx.save();
+ctx.fillText('one', 10, 400);
+ctx.font = '28px Comic';
+ctx.fillText('two', 10, 420);
+ctx.fillRect(220, 220, 100, 100);
+ctx.fillStyle = 'green';
+ctx.restore();
+ctx.fillText('three', 10, 450);
+ctx.fillRect(120, 120, 100, 100);
+ctx.restore();
+ctx.fillStyle = 'green';
+ctx.fillRect(120, 220, 100, 100);
