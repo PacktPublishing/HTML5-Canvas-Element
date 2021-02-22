@@ -1,0 +1,35 @@
+HTML5 Canvas can be used to draw images within a web page
+
+Graphic is contained within canvas tag
+
+Drawing is done via JavaScript
+
+Using JavaScript context object, which creates graphics on the fly.
+
+Using JavaScript to create and draw
+
+Canvas has many easy to use methods text, circles, boxes, and images
+
+default size of the canvas is 300 pixels × 150 pixels (width × height). But custom sizes can be defined using the HTML height and width property.
+
+CSS sizing doesn't respect the ratio of the initial canvas, it ,might appear distorted.
+
+Between canvas tags is fallback content for those older browsers which may
+
+fillRect(x, y, width, height)
+
+Draws a filled rectangle.
+
+strokeRect(x, y, width, height)
+
+Draws a rectangular outline.
+
+clearRect(x, y, width, height)
+
+Clears the specified rectangular area, making it fully transparent.
+
+Colors https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors
+
+More Canvas advanced Learning https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
+
+Attached are the source files used in the lessons

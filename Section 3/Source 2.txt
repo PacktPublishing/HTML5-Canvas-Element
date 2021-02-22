@@ -1,0 +1,32 @@
+const canvas = document.querySelector('#myCanvas');
+const ctx = canvas.getContext('2d');
+const player = {
+  x: 50
+  , y: 50
+};
+draw();
+
+function draw() {
+  let output = `Pos X ${player.x} Y ${player.y}`;
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(player.x, player.y, 100, 100);
+  ctx.font = '24px serif';
+  ctx.textAlign = 'center';
+  ctx.fillStyle = 'red';
+  ctx.fillText(output, 300, 30);
+  //triangle
+  ctx.beginPath();
+  ctx.fillStyle = 'blue';
+  ctx.moveTo(50, 200);
+  ctx.lineTo(150, 250);
+  ctx.lineTo(150, 150);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.fillStyle = 'green';
+  ctx.arc(150, 300, 50, 0, 2 * Math.PI);
+  ctx.strokeStyle = 'yellow';
+  ctx.fill();
+  ctx.stroke();
+  //ctx.rect
+  //ctx.fill();
+}

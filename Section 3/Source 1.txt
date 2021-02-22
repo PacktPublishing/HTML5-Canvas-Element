@@ -1,0 +1,30 @@
+HTML
+
+<!doctype html>
+<html>
+<head>
+  <title>Game Tester</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="myCanvas" width="600" height="480"></canvas>
+  <script src="app.js"></script>
+</body>
+
+</html>
+
+CSS
+
+#myCanvas {
+  background-color: black;
+
+}
+
+JavaScript
+
+const canvas = document.querySelector('#myCanvas');
+const ctx = canvas.getContext('2d');
+ctx.rect(50,50,100,100);
+ctx.fillStyle = '#ffffff';
+ctx.fill();
+
